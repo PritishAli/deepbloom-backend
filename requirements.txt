@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+torch
+transformers
+pydantic
+python-multipart
+accelerate
+evaluate
+scikit-learn
+pandas
+numpy
