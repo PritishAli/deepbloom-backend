@@ -23,7 +23,7 @@ app.add_middleware(
 # =====================================================
 MODEL_PATH = "model/final_model"
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cpu")
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
 model = AutoModelForSequenceClassification.from_pretrained(MODEL_PATH)
@@ -276,3 +276,4 @@ def analyze_assessment(data: Assessment):
         "insight": insight
 
     }
+
