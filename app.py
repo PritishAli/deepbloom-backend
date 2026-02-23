@@ -21,7 +21,7 @@ app.add_middleware(
 # =====================================================
 # LOAD MODEL
 # =====================================================
-MODEL_PATH = "../model/final_model"
+MODEL_PATH = "model/final_model"
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -274,4 +274,5 @@ def analyze_assessment(data: Assessment):
         "complexity_score_out_of_10": complexity_score,
         "complexity_level": complexity_level,
         "insight": insight
+
     }
